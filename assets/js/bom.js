@@ -13,13 +13,25 @@ Good Luck !!!
 
 
 // Define UI Variables  here 
-
-
-
-
-
+const href = document.querySelector('#href');
+const protocol = document.querySelector('#protocol');
+const host = document.querySelector('#host');
+const port = document.querySelector('#port');
+const hostname = document.querySelector('#hname')
+const appname = document.querySelector('#appname');
+const appversion = document.querySelector('#appversion');
+const platform = document.querySelector('#platform');
+const language = document.querySelector('#language');
+const cookie = document.querySelector('#cookie');
+const height = document.querySelector('#height');
+const width = document.querySelector('#width');
+const pixel = document.querySelector('#pixel');
+const length = document.querySelector('#length');
+const state = document.querySelector('#state');
 
 
 
 
 // Display the BOM Information on the innerHTML of the elements
+
+
