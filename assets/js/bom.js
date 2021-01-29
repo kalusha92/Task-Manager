@@ -34,4 +34,19 @@ const state = document.querySelector('#state');
 
 // Display the BOM Information on the innerHTML of the elements
 
+href.innerHTML = window.location.href;
+protocol.innerHTML = window.location.protocol;
+host.innerHTML = window.location.host;
+port.innerHTML = window.location.port;
+hostname.innerHTML = window.location.hostname;
+appname.innerHTML = navigator.appName;
+appversion.innerHTML = navigator.appVersion;
+platform.innerHTML = navigator.platform;
+language.innerHTML = navigator.language;
+cookie.innerHTML = navigator.cookieEnabled;
+height.innerHTML = screen.height;
+width.innerHTML = screen.width;
+pixel.innerHTML = screen.pixelDepth;
+length.innerHTML = history.length;
+state.innerHTML = history.state;
 
