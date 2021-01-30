@@ -80,7 +80,25 @@ function clearAllTasks() {
 
 // Filter tasks function definition 
 function filterTasks(e) {
-    // console.log("Typing....");
+    
+    let searchedFor = filter.value.toLowerCase();
+
+     let AllTasks = document.querySelectorAll('.collection-item')
+ 
+     AllTasks.forEach(function (task) {
+         taskTextContent = task.textContent
+         let searchResult = taskTextContent.indexOf(searchedFor.toLowerCase())
+         
+        if (searchResult == -1){
+             task.style.display = "none"
+         }else{
+             task.style.display = "block"
+         }
+     })
+
+    
+
+
 
     /*  
     Instruction for Handling the Search/filter 

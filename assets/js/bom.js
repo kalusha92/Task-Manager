@@ -29,10 +29,15 @@ const pixel = document.querySelector('#pixel');
 const length = document.querySelector('#length');
 const state = document.querySelector('#state');
 
+const reloadIcon = document.querySelector('.fa');
+
 
 
 
 // Display the BOM Information on the innerHTML of the elements
+
+reloadIcon.addEventListener('click', reloadPage);
+
 
 href.innerHTML = window.location.href;
 protocol.innerHTML = window.location.protocol;
@@ -50,3 +55,9 @@ pixel.innerHTML = screen.pixelDepth;
 length.innerHTML = history.length;
 state.innerHTML = history.state;
 
+
+// Reload Page Function 
+function reloadPage() {
+    //using the reload fun on location object 
+    location.reload();
+}
