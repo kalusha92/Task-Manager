@@ -81,18 +81,18 @@ function clearAllTasks() {
 // Filter tasks function definition 
 function filterTasks(e) {
     
-    let searchedFor = filter.value.toLowerCase();
+     const inputValue = filter.value.toLowerCase();
 
-     let AllTasks = document.querySelectorAll('.collection-item')
+     const tasks = document.querySelectorAll('.collection-item')
  
-     AllTasks.forEach(function (task) {
-         taskTextContent = task.textContent
-         let searchResult = taskTextContent.indexOf(searchedFor.toLowerCase())
+     tasks.forEach(function (task) {
          
-        if (searchResult == -1){
-             task.style.display = "none"
-         }else{
+         let Result = task.textContent.indexOf(inputValue.toLowerCase())
+         
+        if (Result != -1){
              task.style.display = "block"
+         }else{
+             task.style.display = "none"
          }
      })
 
